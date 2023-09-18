@@ -1,0 +1,106 @@
+{
+  "headerSection": {
+    "title": "adamkeyes",
+    "socials": [
+      {
+        "url": "https://github.com/",
+        "icon": "/icon-github.svg"
+      },
+      {
+        "url": "https://www.frontendmentor.io/",
+        "icon": "/icon-frontend-mentor.svg"
+      },
+      {
+        "url": "https://www.linkedin.com/",
+        "icon": "/icon-linkedin.svg"
+      },
+      {
+        "url": "https://www.twitter.com/",
+        "icon": "/icon-twitter.svg"
+      }
+    ]
+  },
+  "heroSection": {
+    "img": {
+      "mobile": "/profile-mobile.webp",
+      "tablet": "/profile-tablet.webp",
+      "desktop": "/profile-desktop.webp"
+    },
+    "heading": "Nice to meet you! I'm",
+    "headingBold": "Adam Keyes",
+    "text": "Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love."
+  },
+  "skillSection": [
+    {
+      "title": "HTML",
+      "experience": "4"
+    },
+    {
+      "title": "CSS",
+      "experience": "4"
+    },
+    {
+      "title": "Javascript",
+      "experience": "4"
+    },
+    {
+      "title": "Accessibility",
+      "experience": "4"
+    },
+    {
+      "title": "React",
+      "experience": "3"
+    },
+    {
+      "title": "Sass",
+      "experience": "3"
+    }
+  ],
+  "projectSection": {
+    "header": {
+      "title": "Projects"
+    },
+    "portfolio": [
+      {
+        "img": "./project-1.webp",
+        "title": "Design Portfolio",
+        "tags": ["HTML", "CSS"],
+        "buttons": ["/", "/"]
+      },
+      {
+        "img": "./project-2.webp",
+        "title": "E-Learning Landing Page",
+        "tags": ["HTML", "CSS"],
+        "buttons": ["/", "/"]
+      },
+      {
+        "img": "./project-3.webp",
+        "title": "Todo Web App",
+        "tags": ["HTML", "CSS", "Javascript"],
+        "buttons": ["/", "/"]
+      },
+      {
+        "img": "./project-4.webp",
+        "title": "Entertainment Web App",
+        "tags": ["HTML", "CSS", "Javascript"],
+        "buttons": ["/", "/"]
+      },
+      {
+        "img": "./project-5.webp",
+        "title": "Memory Game",
+        "tags": ["HTML", "CSS", "Javascript"],
+        "buttons": ["/", "/"]
+      },
+      {
+        "img": "./project-6.webp",
+        "title": "Art Gallery Showcase",
+        "tags": ["HTML", "CSS", "Javascript"],
+        "buttons": ["/", "/"]
+      }
+    ]
+  },
+  "contactSection": {
+    "title": "Contact",
+    "text": "I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible."
+  }
+}
