@@ -16,6 +16,24 @@ const config: Config = {
         white: '#ffffff',
         green: '#4ee1a0',
       },
+      fontSize: {
+        'heading-xl': [
+          '88px',
+          { lineHeight: '88px', fontWeight: 'bold', letterSpacing: '-2.5px' },
+        ],
+        'heading-l': [
+          '48px',
+          { lineHeight: '56px', fontWeight: 'bold', letterSpacing: '-1.5px' },
+        ],
+        'heading-m': [
+          '24px',
+          { lineHeight: '32px', fontWeight: 'bold', letterSpacing: '0' },
+        ],
+        'body-l': [
+          '18px',
+          { lineHeight: '28px', fontWeight: 'medium', letterSpacing: '0' },
+        ],
+      },
       fontFamily: {},
       boxShadow: {},
       backgroundImage: {},

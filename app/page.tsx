@@ -1,5 +1,6 @@
 import HeaderSection from '@/components/containers/header-section';
 import HeroSection from '@/components/containers/hero-section';
+import SkillSection from '@/components/containers/skill-section';
 import PageLayout from '@/components/layouts/page-layout';
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <PageLayout>
       <HeaderSection />
       <HeroSection />
+      <SkillSection />
     </PageLayout>
   );
 }

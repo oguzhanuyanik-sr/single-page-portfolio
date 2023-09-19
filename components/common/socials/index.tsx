@@ -11,7 +11,7 @@ type SocialsProps = {
 
 const Socials = ({ data }: SocialsProps) => {
   return (
-    <div className='flex items-center gap-5'>
+    <div className='flex items-center justify-center gap-5 w-full md:w-auto md:pr-5'>
       {data.map(({ url, icon }, index) => (
         <Link key={index} href={url}>
           <Image
