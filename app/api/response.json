@@ -62,37 +62,37 @@
     },
     "portfolio": [
       {
-        "img": "./project-1.webp",
+        "img": "/project-1.webp",
         "title": "Design Portfolio",
         "tags": ["HTML", "CSS"],
         "buttons": ["/", "/"]
       },
       {
-        "img": "./project-2.webp",
+        "img": "/project-2.webp",
         "title": "E-Learning Landing Page",
         "tags": ["HTML", "CSS"],
         "buttons": ["/", "/"]
       },
       {
-        "img": "./project-3.webp",
+        "img": "/project-3.webp",
         "title": "Todo Web App",
         "tags": ["HTML", "CSS", "Javascript"],
         "buttons": ["/", "/"]
       },
       {
-        "img": "./project-4.webp",
+        "img": "/project-4.webp",
         "title": "Entertainment Web App",
         "tags": ["HTML", "CSS", "Javascript"],
         "buttons": ["/", "/"]
       },
       {
-        "img": "./project-5.webp",
+        "img": "/project-5.webp",
         "title": "Memory Game",
         "tags": ["HTML", "CSS", "Javascript"],
         "buttons": ["/", "/"]
       },
       {
-        "img": "./project-6.webp",
+        "img": "/project-6.webp",
         "title": "Art Gallery Showcase",
         "tags": ["HTML", "CSS", "Javascript"],
         "buttons": ["/", "/"]
