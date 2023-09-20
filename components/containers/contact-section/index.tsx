@@ -14,11 +14,12 @@ const ContactSection = () => {
     mode: 'onChange',
   });
 
-  const { register, handleSubmit, formState } = form;
+  const { register, handleSubmit, formState, reset } = form;
   const { errors } = formState;
 
   const onSubmit = ({ name, email, message }: FormValues) => {
     alert(`Your message has been received ❤️\n\n${name}\n${email}\n${message}`);
+    reset();
   };
 
   return (
