@@ -1,12 +1,9 @@
 import UnderscoreLink from '@/components/common/underscore-link';
 import React from 'react';
 import { projectSection } from '@/app/api/response.json';
-import Image from 'next/image';
 import ProjectCard from '@/components/common/project-card';
 
-type Props = {};
-
-const ProjectSection = (props: Props) => {
+const ProjectSection = () => {
   return (
     <div className='container'>
       <section className='flex flex-col items-center'>
@@ -15,7 +12,7 @@ const ProjectSection = (props: Props) => {
             {projectSection.header.title}
           </h4>
           <div>
-            <UnderscoreLink title='Contact Me' url='/' />
+            <UnderscoreLink title='Contact Me' url='/' type='link' />
           </div>
         </div>
 

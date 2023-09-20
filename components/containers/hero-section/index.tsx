@@ -2,11 +2,8 @@
 import React from 'react';
 import { heroSection } from '@/app/api/response.json';
 import UnderscoreLink from '@/components/common/underscore-link';
-import Image from 'next/image';
 import ImgSrcset from '@/components/common/img-srcset';
 import { motion } from 'framer-motion';
-
-type Props = {};
 
 const imgData = [
   {
@@ -26,7 +23,7 @@ const imgData = [
   },
 ];
 
-const HeroSection = (props: Props) => {
+const HeroSection = () => {
   return (
     <div className='container'>
       <div className='w-full flex flex-col-reverse md:flex-row md:justify-between'>
@@ -56,7 +53,7 @@ const HeroSection = (props: Props) => {
             {heroSection.text}
           </p>
           <div className='w-full flex justify-center md:justify-start'>
-            <UnderscoreLink url='/' title='Contact Me' />
+            <UnderscoreLink url='/' title='Contact Me' type='link' />
           </div>
         </motion.div>
 

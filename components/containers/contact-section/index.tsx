@@ -21,7 +21,7 @@ const schema = yup.object({
   message: yup.string().required('Message is required'),
 });
 
-const ContactSection = (props: Props) => {
+const ContactSection = () => {
   const form = useForm<FormValues>({
     defaultValues: {
       name: '',
@@ -105,7 +105,7 @@ const ContactSection = (props: Props) => {
           </div>
 
           <div className='w-full flex justify-end'>
-            <UnderscoreLink title='Send message' type='submit' />
+            <UnderscoreLink title='Send message' type='submit' url='' />
           </div>
         </form>
       </div>

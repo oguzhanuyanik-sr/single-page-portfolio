@@ -4,9 +4,7 @@ import BarLayout from '@/components/layouts/bar-layout';
 import React from 'react';
 import { headerSection } from '@/app/api/response.json';
 
-type Props = {};
-
-const HeaderSection = (props: Props) => {
+const HeaderSection = () => {
   return (
     <header>
       <BarLayout>

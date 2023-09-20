@@ -4,13 +4,10 @@ import React from 'react';
 type UnderscoreLinkProps = {
   url: string;
   title: string;
+  type: 'link' | 'submit';
 };
 
-const UnderscoreLink = ({
-  url = '/',
-  title,
-  type = 'link',
-}: UnderscoreLinkProps) => {
+const UnderscoreLink = ({ url, title, type }: UnderscoreLinkProps) => {
   return (
     <>
       {type === 'link' ? (

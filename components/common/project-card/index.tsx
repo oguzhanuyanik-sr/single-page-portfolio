@@ -4,9 +4,14 @@ import React from 'react';
 import UnderscoreLink from '../underscore-link';
 import { motion } from 'framer-motion';
 
-type Props = {};
+type ProjectCardProps = {
+  img: string;
+  title: string;
+  tags: string[];
+  buttons: string[];
+};
 
-const ProjectCard = ({ img, title, tags, buttons }: Props) => {
+const ProjectCard = ({ img, title, tags, buttons }: ProjectCardProps) => {
   return (
     <motion.div
       initial={{
@@ -48,8 +53,8 @@ const ProjectCard = ({ img, title, tags, buttons }: Props) => {
         </div>
 
         <div className='mb-12 flex gap-8 w-full'>
-          <UnderscoreLink title='View Project' url={buttons[0]} />
-          <UnderscoreLink title='View Code' url={buttons[1]} />
+          <UnderscoreLink type='link' title='View Project' url={buttons[0]} />
+          <UnderscoreLink type='link' title='View Code' url={buttons[1]} />
         </div>
       </div>
     </motion.div>

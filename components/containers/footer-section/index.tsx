@@ -4,9 +4,7 @@ import BarLayout from '@/components/layouts/bar-layout';
 import React from 'react';
 import { headerSection } from '@/app/api/response.json';
 
-type Props = {};
-
-const FooterSection = (props: Props) => {
+const FooterSection = () => {
   return (
     <footer className='py-10'>
       <BarLayout>
