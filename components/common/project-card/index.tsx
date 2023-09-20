@@ -1,12 +1,30 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
 import UnderscoreLink from '../underscore-link';
+import { motion } from 'framer-motion';
 
 type Props = {};
 
 const ProjectCard = ({ img, title, tags, buttons }: Props) => {
   return (
-    <div className='md:w-[48%] flex flex-col' key={title}>
+    <motion.div
+      initial={{
+        opacity: 0,
+        y: 15,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+      }}
+      transition={{
+        duration: 1,
+        type: 'spring',
+      }}
+      viewport={{ once: false }}
+      className='md:w-[48%] flex flex-col'
+      key={title}
+    >
       <div className='w-full flex justify-center'>
         <Image
           src={img}
@@ -34,7 +52,7 @@ const ProjectCard = ({ img, title, tags, buttons }: Props) => {
           <UnderscoreLink title='View Code' url={buttons[1]} />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
