@@ -1,11 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-
-type UnderscoreLinkProps = {
-  url: string;
-  title: string;
-  type: 'link' | 'submit';
-};
+import { UnderscoreLinkProps } from './types';
 
 const UnderscoreLink = ({ url, title, type }: UnderscoreLinkProps) => {
   return (

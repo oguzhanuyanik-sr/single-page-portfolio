@@ -4,35 +4,17 @@ import { contactSection } from '@/app/api/response.json';
 import UnderscoreLink from '@/components/common/underscore-link';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
-
-type FormValues = {
-  name: string;
-  email: string;
-  message: string;
-};
-
-const schema = yup.object({
-  name: yup.string().required('Name is required'),
-  email: yup
-    .string()
-    .email('Sorry, invalid format here')
-    .required('Email is required'),
-  message: yup.string().required('Message is required'),
-});
+import { FormValues } from './types';
+import { schema, defaultValues } from './constants';
 
 const ContactSection = () => {
   const form = useForm<FormValues>({
-    defaultValues: {
-      name: '',
-      email: '',
-      message: '',
-    },
+    defaultValues,
     resolver: yupResolver(schema),
     mode: 'onChange',
   });
 
-  const { register, handleSubmit, formState, getValues } = form;
+  const { register, handleSubmit, formState } = form;
   const { errors } = formState;
 
   const onSubmit = ({ name, email, message }: FormValues) => {

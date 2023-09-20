@@ -1,9 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-
-type LogoProps = {
-  title: string;
-};
+import { LogoProps } from './types';
 
 const Logo = ({ title }: LogoProps) => {
   return (

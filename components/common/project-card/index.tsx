@@ -3,29 +3,15 @@ import Image from 'next/image';
 import React from 'react';
 import UnderscoreLink from '../underscore-link';
 import { motion } from 'framer-motion';
-
-type ProjectCardProps = {
-  img: string;
-  title: string;
-  tags: string[];
-  buttons: string[];
-};
+import { ProjectCardProps } from './types';
+import { cardVariants } from './constants';
 
 const ProjectCard = ({ img, title, tags, buttons }: ProjectCardProps) => {
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-        y: 15,
-      }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-      }}
-      transition={{
-        duration: 1,
-        type: 'spring',
-      }}
+      variants={cardVariants}
+      initial={'hide'}
+      whileInView={'show'}
       viewport={{ once: false }}
       className='md:w-[48%] flex flex-col'
       key={title}

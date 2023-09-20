@@ -1,13 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-
-type SocialsProps = {
-  data: {
-    url: string;
-    icon: string;
-  }[];
-};
+import { SocialsProps } from './types';
 
 const Socials = ({ data }: SocialsProps) => {
   return (
