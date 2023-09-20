@@ -15,6 +15,7 @@ const config: Config = {
         grey: '#d9d9d9',
         white: '#ffffff',
         green: '#4ee1a0',
+        red: '#FF6F5B',
       },
       fontSize: {
         'heading-xl': [

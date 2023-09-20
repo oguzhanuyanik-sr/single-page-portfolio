@@ -6,14 +6,29 @@ type UnderscoreLinkProps = {
   title: string;
 };
 
-const UnderscoreLink = ({ url, title }: UnderscoreLinkProps) => {
+const UnderscoreLink = ({
+  url = '/',
+  title,
+  type = 'link',
+}: UnderscoreLinkProps) => {
   return (
-    <Link
-      className='font-bold text-[16px] leading-[26px] border-b-2 border-b-green pb-[10px] tracking-[2.3px] hover:text-green transition-all whitespace-nowrap'
-      href={url}
-    >
-      {title}
-    </Link>
+    <>
+      {type === 'link' ? (
+        <Link
+          className='font-bold text-[16px] leading-[26px] border-b-2 border-b-green pb-[10px] tracking-[2.3px] hover:text-green transition-all whitespace-nowrap uppercase'
+          href={url}
+        >
+          {title}
+        </Link>
+      ) : (
+        <button
+          className='font-bold text-[16px] leading-[26px] border-b-2 border-b-green pb-[10px] tracking-[2.3px] hover:text-green transition-all whitespace-nowrap uppercase'
+          type='submit'
+        >
+          {title}
+        </button>
+      )}
+    </>
   );
 };
 
