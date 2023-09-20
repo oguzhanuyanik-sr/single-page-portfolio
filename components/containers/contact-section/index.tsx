@@ -29,9 +29,10 @@ const ContactSection = (props: Props) => {
       message: '',
     },
     resolver: yupResolver(schema),
+    mode: 'onChange',
   });
 
-  const { register, handleSubmit, formState } = form;
+  const { register, handleSubmit, formState, getValues } = form;
   const { errors } = formState;
 
   const onSubmit = ({ name, email, message }: FormValues) => {
@@ -57,7 +58,11 @@ const ContactSection = (props: Props) => {
         >
           <div className='mb-8'>
             <input
-              className='w-full bg-transparent border-b-[1px] border-white mb-2 pl-6 py-6 outline-none placeholder:font-medium placeholder:text-base placeholder:leading-[16px] placeholder:uppercase'
+              className={`${
+                errors.name?.message
+                  ? 'border-red'
+                  : 'border-white focus:border-green'
+              } w-full bg-transparent border-b-[1px] mb-2 pl-6 py-6 outline-none placeholder:font-medium placeholder:text-base placeholder:leading-[16px] placeholder:uppercase`}
               placeholder='Name'
               type='text'
               autoComplete='off'
@@ -69,7 +74,11 @@ const ContactSection = (props: Props) => {
           </div>
           <div className='mb-8'>
             <input
-              className='w-full bg-transparent border-b-[1px] border-white mb-2 pl-6 py-6 outline-none placeholder:font-medium placeholder:text-base placeholder:leading-[16px] placeholder:uppercase'
+              className={`${
+                errors.email?.message
+                  ? 'border-red'
+                  : 'border-white focus:border-green'
+              } w-full bg-transparent border-b-[1px] mb-2 pl-6 py-6 outline-none placeholder:font-medium placeholder:text-base placeholder:leading-[16px] placeholder:uppercase`}
               placeholder='Email'
               type='email'
               autoComplete='off'
@@ -81,7 +90,11 @@ const ContactSection = (props: Props) => {
           </div>
           <div className='mb-8'>
             <textarea
-              className='w-full resize-none bg-transparent border-b-[1px] border-white mb-2 pl-6 py-6 outline-none font-medium text-base leading-[16px] placeholder:uppercase'
+              className={`${
+                errors.message?.message
+                  ? 'border-red'
+                  : 'border-white focus:border-green'
+              } w-full resize-none bg-transparent border-b-[1px] border-white mb-2 pl-6 py-6 outline-none font-medium text-base leading-[16px] placeholder:uppercase`}
               placeholder='MESSAGE'
               rows={6}
               {...register('message')}
